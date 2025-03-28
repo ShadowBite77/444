@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalos Diarios</title>
+    <link rel="stylesheet" href="./css/regalo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Elige un Regalo</h1>
+        <div class="balance">
+            <p>Balance: $<span id="balance">0</span> USDT</p>
+        </div>
+        <div class="regalos">
+            <div class="regalo" onclick="abrirRegalo(0)"></div>
+            <div class="regalo" onclick="abrirRegalo(1)"></div>
+            <div class="regalo" onclick="abrirRegalo(2)"></div>
+            <div class="regalo" onclick="abrirRegalo(3)"></div>
+            <div class="regalo" onclick="abrirRegalo(4)"></div>
+        </div>
+        <p id="mensaje"></p>
+        <div id="monedas"></div>
+    </div>
+    <a href="Cuenta.html" id="btnRegresar" onclick="regresar()" class="boton-regresar">Regresar</button></a>
+
+    <script src="./js/regalo.js"></script> <!-- Cambiado a balance.js -->
+</body>
+</html>

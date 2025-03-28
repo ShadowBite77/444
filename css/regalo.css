@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1b1b32;
+    color: white;
+    overflow: hidden;
+}
+@media (max-width: 600px) {
+}
+.container {
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.balance {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.regalos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.regalo {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url('gift.png'); /* Imagen de un regalo */
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.regalo:hover {
+    transform: scale(1.1);
+}
+
+.abierto {
+    background-color: green;
+    background-image: none;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: abrir 0.5s ease-in-out forwards;
+}
+
+@keyframes abrir {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Animación de monedas */
+#monedas {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+}
+
+.moneda {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('coin.png'); /* Imagen de una moneda */
+    background-size: cover;
+    animation: caer 2s linear forwards;
+}
+
+@keyframes caer {
+    0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(500px) rotate(360deg); opacity: 0; }
+}
+
+.boton-regresar {
+    background-color: #4CAF50; /* Color verde */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 20px; /* Espacio arriba */
+    text-decoration: none; /* Quitar la línea del enlace */
+}
+
+.boton-regresar:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el mouse */
+}
