@@ -1,8 +1,9 @@
-body {
+ody {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
     padding: 20px;
+    text-align: center; /* Centrar el título */
 }
 
 .container {
@@ -10,6 +11,7 @@ body {
     padding: 20px;
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    
 }
 
 h2 {
@@ -20,6 +22,7 @@ table {
     width: 100%;
     border-collapse: collapse; /* Colapsar bordes de la tabla */
     margin-top: 20px;
+    text-align: center; /* Centrar el título */
 }
 
 th, td {
